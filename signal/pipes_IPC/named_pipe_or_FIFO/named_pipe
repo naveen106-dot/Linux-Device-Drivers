@@ -1,0 +1,7 @@
+What is a FIFO (Named Pipe)?
+
+FIFO stands for First In First Out, also called a named pipe.
+
+Unlike anonymous pipes, which only work between related processes (parent-child), FIFOs allow unrelated processes to communicate.
+
+It exists as a special file in the filesystem. Processes can open it like a normal file for reading or writing.

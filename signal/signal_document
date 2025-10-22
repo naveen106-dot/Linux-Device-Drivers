@@ -1,0 +1,15 @@
+A signal is a software interrupt sent to a process.
+
+Used to notify a process about an event (like Ctrl+C, segmentation fault, etc.).
+
+Common signals:
+
+SIGINT (Interrupt – Ctrl+C)
+
+SIGTERM (Termination)
+
+SIGKILL (Kill – cannot be caught)
+
+SIGUSR1, SIGUSR2 (User-defined signals)
+
+You can handle a signal using signal() or sigaction() system calls.

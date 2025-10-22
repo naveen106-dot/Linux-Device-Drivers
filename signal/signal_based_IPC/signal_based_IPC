@@ -1,0 +1,8 @@
+Signal-Based IPC Between Two Processes
+🔹 Concept:
+
+Signals can be used for inter-process communication (IPC).
+
+One process can send a signal to another using kill(pid, signal).
+
+The receiver should register a signal handler.

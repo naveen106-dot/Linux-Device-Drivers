@@ -1,0 +1,7 @@
+A pipe is a mechanism for communication between processes in Linux/Unix. It allows one process to send data to another process in a unidirectional flow (one-way).
+
+Full-duplex communication (two-way) requires two pipes.
+
+Pipes are implemented by the kernel using a buffer in memory.
+
+Typically used between parent and child processes created by fork().

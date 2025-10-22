@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+#include <stdint.h>
+
+
+void * myP1Function(void* arg){
+	int number = *((int*)arg);
+	printf("Argument passed value:%d",number);
+	return NULL;
+}
+
+int main(){
+
+	pthread_t p1;
+	uint32_t value = 32;
+
+	if (pthread_create(&p1, NULL, myP1Function,&value)){
+		perror("pthread_created");
+		return 1;
+	}
+	
+	 // Wait for the thread to finish
+    	pthread_join(p1, NULL);
+
+}
